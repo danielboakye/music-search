@@ -1,3 +1,3 @@
 ### music-search
 
-[CORS Anywhere](https://cors-anywhere.herokuapp.com/corsdemo)
+[Enable CORS Anywhere](https://cors-anywhere.herokuapp.com/corsdemo)
