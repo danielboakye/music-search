@@ -1,0 +1,41 @@
+.custom-list {
+    padding: 10px;
+    padding-left: 20px;
+}
+  
+.custom-list li {
+    display: list-item;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    padding: 20px 0px;
+    border-bottom: 3px solid #ccc;
+}
+
+.custom-list li span {
+    float: right;
+    font-size: 18px;
+    color: #888;
+}
+
+.img-container {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.img-txt-centered {
+    position: absolute;
+    top: 45%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.img-txt-centered h1 {
+    font-size: 6em;
+}
+
+.img-txt-centered p {
+    font-size: 1.5em;
+}
