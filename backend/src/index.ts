@@ -2,7 +2,7 @@ import express, { Request, Response } from 'express';
 import axios from 'axios';
 import type { IProcessedTracks, IProcessedArtist, IAlbum } from './types'
 import cors from 'cors'
-import functions from 'firebase-functions'
+// import functions from 'firebase-functions'
 
 const PORT = 8000;
 const app = express();
@@ -100,4 +100,4 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
-exports.app = functions.https.onRequest(app);
+// exports.app = functions.https.onRequest(app);
