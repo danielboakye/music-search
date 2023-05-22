@@ -2,7 +2,7 @@ import express, { Request, Response } from 'express';
 import axios from 'axios';
 import type { IProcessedTracks, IProcessedArtist, IAlbum } from './types'
 import cors from 'cors'
-// import functions from 'firebase-functions'
+import * as functions from 'firebase-functions'
 
 const PORT = 8000;
 const app = express();
@@ -30,6 +30,8 @@ app.get('/search', async (req: Request, res: Response) => {
 
     const response = await axios.get(`${CORS_PREFIX}/${API_BASE_URL}/search?q=${query}`, headers);
     const tracks = response.data.data;
+    console.log(`Error fetching results: ${response.data}`)
+    console.log(tracks)
     if(!tracks){
       res.status(500).json({ error: `Error fetching results for ${query}` });
     }
@@ -100,4 +102,4 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
-// exports.app = functions.https.onRequest(app);
+export const api = functions.https.onRequest(app);
