@@ -7,5 +7,5 @@ export const API: {
     [key: string]: string
   } = {
     [ENV_LOCAL]: 'http://localhost:8000',
-    [ENV_PROD]: 'https://us-central1-music-search.cloudfunctions.net/api',
+    [ENV_PROD]: 'https://us-central1-music-search-xxxx.cloudfunctions.net/api',
   }

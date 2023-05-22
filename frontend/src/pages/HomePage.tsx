@@ -46,6 +46,7 @@ const Home: FC = () => {
   >();
 
   const BASE_URL = API[ENV()];
+  console.log(BASE_URL);
 
   const fetchData = async () => {
     try {

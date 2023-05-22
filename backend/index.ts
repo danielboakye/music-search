@@ -11,10 +11,11 @@ app.use(cors());
 
 const API_BASE_URL = 'https://api.deezer.com'
 const GET_ARTIST = 'artist'
-const CORS_PREFIX = 'https://cors-anywhere.herokuapp.com'
+const CORS_PREFIX = 'https://proxy.cors.sh'
 const headers = {
   headers: {
-    'X-Requested-With': 'XMLHttpRequest'
+    'X-Requested-With': 'XMLHttpRequest',
+    'x-cors-api-key': 'temp_d7d6d290cbeefba3abdb722d9e277603'
   }
 }
 
